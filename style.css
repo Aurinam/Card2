@@ -1,0 +1,193 @@
+/* Google Fonts: Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    background: #131322;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+section::before {
+    content: "";
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(90deg, rgb(201, 34, 198), white);
+    transform: translate(-179px, -117px);
+}
+
+section::after {
+    content: "";
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(90deg, rgb(201, 34, 198), white);
+    transform: translate(187px, 117px);
+}
+
+.container {
+    height: 253px;
+    width: 413px;
+    position: relative;
+    z-index: 10;
+    transform-style: preserve-3d;
+    transition: .8s;
+}
+
+.container:hover {
+    transform: rotateY(180deg);
+}
+
+.container .card {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    box-shadow: -6px 7px 15px 1px #00000080;
+    backdrop-filter: blur(30px);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front {
+    padding: 20px 30px;
+}
+
+.logo {
+    width: 99%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+}
+
+.master_card {
+    display: inline-block;
+    width: 70px;
+}
+
+.master_card img {
+    height: 35px;
+    width: auto;
+}
+
+.logo h3 {
+    display: inline-block;
+    color: white;
+}
+
+.chip {
+    display: inline-block;
+    width: 160px;
+    padding-left: 110px;
+}
+
+.chip img {
+    height: 35px;
+    width: auto;
+}
+
+.card_number {
+    height: 106px;
+    padding: 50px 0px 0px 2px;
+    display: inline-block;
+}
+
+.card_number h6 {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.card_number p {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.name {
+    color: white;
+    font-size: 23px;
+    font-weight: 300;
+    display: inline-block;
+    padding: 10px 0px;
+}
+
+.validity {
+    color: white;
+    display: inline-block;
+    padding: 0px 0px 0px 70px
+}
+
+.validity h6 {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.validity h5 {
+    font-size: 20px;
+    font-weight: 400;
+}
+.back{
+    transform: rotateY(180deg);
+}
+
+.customer_service {
+    color: white;
+    font-size: 10px;
+    padding: 21px 12px;
+    font-weight: 400;
+}
+
+.strip {
+    height: 45px;
+    width: 100%;
+    background-color: black;
+}
+
+.white_strip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95px;
+}
+
+.signature {
+    display: inline-block;
+    height: 45px;
+    width: 75%;
+    background: repeating-linear-gradient(
+            #fff,
+            #fff 3px,
+            #efefef 0px,
+            #efefef 9px);
+    border-radius: 8px;
+}
+
+.signature_number {
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    background-color: white;
+    border-radius: 0px 6px 6px 0px;
+    font-style: italic;
+    padding: 3px 4px;
+}
+
+.back p {
+    color: white;
+    font-size: 9px;
+    padding: 0px 22px;
+}
